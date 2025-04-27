@@ -1,1 +1,97 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #e0f2f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.username {
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.description a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0088cc;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background 0.3s, transform 0.3s;
+    animation: pulse 2s infinite;
+}
+
+.btn:hover {
+    background-color: #0077b6;
+    transform: scale(1.05);
+}
+
+/* Button animation */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0,136,204, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(0,136,204, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0,136,204, 0);
+    }
+}
+
+.footer {
+    font-size: 13px;
+    color: gray;
+  }
 
